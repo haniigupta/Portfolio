@@ -45,7 +45,7 @@ export const skillCategories = [
     title: "Programming & DSA",
     skills: [
       "DSA",
-      "LeetCode (160+)",
+      "LeetCode (200+)",
       "Algorithms",
     ],
   },
