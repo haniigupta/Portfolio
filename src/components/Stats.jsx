@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const stats = [
   {
-    number: "160+",
+    number: "200+",
     title: "LeetCode Problems",
   },
   {

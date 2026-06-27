@@ -4,6 +4,7 @@ import { projects } from "../data/projects";
 function Projects() {
   return (
     <section id="projects">
+      
       <h2 className="section-title">
         Featured Projects
       </h2>

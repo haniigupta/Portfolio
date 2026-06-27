@@ -1,145 +1,127 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
-  
   FaCodeBranch,
   FaBug,
   FaFolderOpen,
-  
 } from "react-icons/fa";
 
-const stats = [
-  {
-    icon: <FaCodeBranch />,
-    value: "20+",
-    label: "Pull Requests",
-  },
-  {
-    icon: <FaBug />,
-    value: "15+",
-    label: "Issues Raised",
-  },
-  {
-    icon: <FaFolderOpen />,
-    value: "10+",
-    label: "Repositories",
-  },
+import StatCard from "./StatCard";
+
+
+import {
+  contributionStats,
+} from "../data/contributions";
+
+const icons = [
+  <FaCodeBranch />,
+  <FaBug />,
+  <FaFolderOpen />,
 ];
-
-
 
 function OpenSource() {
   return (
     <section
       id="opensource"
-      className="py-24 px-[10%]"
+      className="relative py-28 px-[8%]"
     >
+      {/* Background Glow */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute left-1/3 top-24 h-80 w-80 rounded-full bg-violet-500/10 blur-[140px]" />
+        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-cyan-500/10 blur-[140px]" />
+      </div>
+
+      {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="max-w-3xl"
       >
-        <h2 className="text-5xl font-bold mb-4">
-          Open Source Contributions
+        <span className="text-violet-400 font-semibold tracking-widest uppercase">
+          Open Source
+        </span>
+
+        <h2 className="mt-5 text-6xl font-black leading-[1.15]">
+          Building Through
+          <span className="text-violet-400">
+            {" "}
+            Real Contributions
+          </span>
         </h2>
 
-        <p className="text-gray-400 max-w-3xl leading-8">
-          Contributed to multiple open source organizations through
-          frontend, backend, UI/UX, accessibility and documentation
-          improvements across real-world production repositories.
+        <p className="mt-6 text-lg leading-8 text-gray-400">
+          Contributing to production repositories across frontend,
+          backend, accessibility and UI/UX while collaborating with
+          maintainers through pull requests and issue discussions.
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-3 gap-6 mt-12">
-        {stats.map((item, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.15 }}
-            viewport={{ once: true }}
-            className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 text-center"
-          >
-            <div className="text-violet-400 text-3xl flex justify-center">
-              {item.icon}
-            </div>
-
-            <h3 className="text-4xl font-bold mt-4">
-              {item.value}
-            </h3>
-
-            <p className="text-gray-400 mt-2">
-              {item.label}
-            </p>
-          </motion.div>
+      {/* Stats */}
+      <div className="mt-24 grid gap-12 md:grid-cols-3">
+        {contributionStats.map((item, index) => (
+          <StatCard
+            key={item.label}
+            icon={icons[index]}
+            value={item.value}
+            label={item.label}
+            delay={index * 0.15}
+          />
         ))}
       </div>
+
+
+      {/* CTA */}
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.2 }}
-        className="grid gap-6 md:grid-cols-3 mt-14"
+        className="mt-32 flex flex-col items-center text-center"
       >
 
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
-          <h3 className="text-xl font-semibold">
-            Open Source Connect Global
-          </h3>
 
-          <p className="mt-2 text-violet-400 font-medium">
-            10+ Pull Requests
-          </p>
-
-          <p className="mt-4 text-gray-400 leading-7">
-            Frontend • Backend • UI/UX
-          </p>
-        </div>
-
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
-          <h3 className="text-xl font-semibold">
-            Social Summer of Code
-          </h3>
-
-          <p className="mt-2 text-violet-400 font-medium">
-            5 Pull Requests
-          </p>
-
-          <p className="mt-4 text-gray-400 leading-7">
-            UI/UX • Backend
-          </p>
-        </div>
-
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
-          <h3 className="text-xl font-semibold">
-            GirlScript Summer of Code
-          </h3>
-
-          <p className="mt-2 text-violet-400 font-medium">
-            1 Merged Pull Request
-          </p>
-
-          <p className="mt-4 text-gray-400 leading-7">
-            UI Enhancement
-          </p>
-        </div>
-
-      </motion.div>
-
-      <div className="mt-12 flex justify-center">
+        <p className="mt-5 max-w-xl text-lg leading-8 text-gray-400">
+          View all pull requests, issues, organizations and featured contributions.
+        </p>
 
         <Link
           to="/contributions"
-          className="inline-flex items-center rounded-xl bg-violet-600 px-8 py-4 font-semibold transition-all duration-300 hover:bg-violet-500 hover:scale-105"
+          className="
+  group
+  mt-10
+  inline-flex
+  items-center
+  gap-3
+  rounded-full
+  border
+  border-violet-500/30
+  bg-gradient-to-r
+  from-violet-600/90
+  to-indigo-600/90
+  px-8
+  py-4
+  text-base
+  font-semibold
+  shadow-lg
+  shadow-violet-500/20
+  transition-all
+  duration-300
+  hover:-translate-y-1
+  hover:scale-105
+  hover:shadow-violet-500/40
+"
         >
-          View My Open Source Portfolio →
+          Open Source Portfolio
+
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
         </Link>
 
-      </div>
 
-
+      </motion.div>
     </section>
-
   );
 }
 
