@@ -17,7 +17,7 @@ export const organizations = [
   {
     id: 1,
     title: "Open Source Connect Global",
-    duration: "Feb 2026 – Present",
+    duration: "Feb 2026 – March 2026",
     prCount: "10+ PRs",
     issueCount: "10+ Issues",
     subtitle: "Primary Contribution Program",
@@ -37,7 +37,7 @@ export const organizations = [
   {
     id: 2,
     title: "Social Summer of Code",
-    duration: "Jun 2026 – Jul 2026",
+    duration: "Jun 2026 – Aug 2026",
     prCount: "5 PRs",
     issueCount: "4 Issues",
 
@@ -77,15 +77,15 @@ export const featuredPRs = [
     repository: "WalletWise",
 
     title:
-      "Loading feedback & refresh state improvements",
+      "Add reusable ConfirmDialog for modal close confirmation",
 
-    tech: ["React", "UI", "Accessibility"],
+    tech: ["React", "UI"],
 
     type: "Frontend",
 
     status: "Merged",
 
-    url: "",
+    url: "https://github.com/SoumyaMishra-7/WalletWise/pull/237",
   },
 
   {
@@ -94,7 +94,7 @@ export const featuredPRs = [
     repository: "Innovision",
 
     title:
-      "Reusable ConfirmDialog component",
+      "Add proper loading component when API fails",
 
     tech: ["React", "Component Design"],
 
@@ -102,7 +102,7 @@ export const featuredPRs = [
 
     status: "Merged",
 
-    url: "",
+    url: "https://github.com/ItsVikasA/Innovision-Open-Source/pull/81",
   },
 
   {
@@ -119,7 +119,7 @@ export const featuredPRs = [
 
     status: "Merged",
 
-    url: "",
+    url: "https://github.com/niharika-mente/DevEvent_Tracker/pull/123",
   },
 
   {
@@ -128,7 +128,7 @@ export const featuredPRs = [
     repository: "File Sharing System",
 
     title:
-      "Improve homepage hierarchy & database imports",
+      "Fix auth loading when Redis is unavailable",
 
     tech: ["MongoDB", "Node.js"],
 
@@ -136,7 +136,7 @@ export const featuredPRs = [
 
     status: "Merged",
 
-    url: "",
+    url: "https://github.com/imanchalsingh/File-Sharing-System/pull/29",
   },
 ];
 
@@ -149,7 +149,7 @@ export const featuredIssues = [
     title:
       "Explore Events button does not navigate",
 
-    status: "Open",
+    status: "closed",
   },
 
   {
@@ -160,7 +160,7 @@ export const featuredIssues = [
     title:
       "Hero section buttons are not functional",
 
-    status: "Open",
+    status: "closed",
   },
 
   {
@@ -170,7 +170,7 @@ export const featuredIssues = [
     title:
       "Implement delete option for savings goals",
 
-    status: "Open",
+    status: "closed",
   },
 
   {
