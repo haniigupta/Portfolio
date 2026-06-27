@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Contributions from "./pages/Contributions";
+import Contributions from "./pages/OpenSourceExperience";
 
 function App() {
   return (
