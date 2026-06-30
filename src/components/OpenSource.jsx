@@ -37,9 +37,9 @@ function OpenSource() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="max-w-3xl"
+        className=""
       >
-        <span className="text-violet-400 font-semibold tracking-widest uppercase">
+        <span className="text-White-400 font-semibold tracking-widest uppercase">
           Open Source
         </span>
 
@@ -59,14 +59,14 @@ function OpenSource() {
       </motion.div>
 
       {/* Stats */}
-      <div className="mt-24 grid gap-12 md:grid-cols-3">
+      <div className="mt-20 grid gap-12 md:grid-cols-3">
         {contributionStats.map((item, index) => (
           <StatCard
             key={item.label}
             icon={icons[index]}
             value={item.value}
             label={item.label}
-            delay={index * 0.15}
+            delay={index * 0.2}
           />
         ))}
       </div>
@@ -89,10 +89,10 @@ function OpenSource() {
           to="/contributions"
           className="
   group
-  mt-10
+  mt-20
   inline-flex
   items-center
-  gap-3
+  gap-6
   rounded-full
   border
   border-violet-500/30
@@ -100,7 +100,7 @@ function OpenSource() {
   from-violet-600/90
   to-indigo-600/90
   px-8
-  py-4
+  py-8
   text-base
   font-semibold
   shadow-lg
