@@ -7,14 +7,21 @@ export const projects = [
     image: aiAssistant,
 
     description:
-      "Full-stack AI learning platform that transforms PDFs into summaries, flashcards, quizzes, and interactive study materials.",
+      "Built a full-stack AI Learning Assistant that allows users to upload PDF documents and automatically generates AI-powered summaries, flashcards, and quizzes using RAG, vector embeddings, vector search, and Groq LLM APIs. Implemented secure JWT authentication, REST APIs, and deployed the application using Vercel and Render.",
 
     tech: [
       "React",
       "Node.js",
       "Express",
       "MongoDB",
+      "JWT",
+      "Generative AI",
+      "RAG",
+      "Vector Embeddings",
+      "Tailwind",
       "Groq AI",
+      "Vercel",
+      "Render",
     ],
 
     github:
