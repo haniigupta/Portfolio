@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -14,7 +15,15 @@ function Navbar() {
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#opensource">Open Source</a>
+
+        <Link to="/contributions">
+          Open Source
+        </Link>
+
+        <Link to="/certificates">
+          Certificates
+        </Link>
+
         <a href="#contact">Contact</a>
       </div>
     </motion.nav>
