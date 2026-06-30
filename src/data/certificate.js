@@ -1,5 +1,5 @@
 import genAi from "../assets/certificates/genAi.png";
-import mongoDb from "../assets/certificates/mongoDb.png";
+import mongoDb from "../assets/certificates/mongoDB.png";
 import genAiBusiness from "../assets/certificates/genAiBusiness.png";
 import oscgContributor from "../assets/certificates/oscgContributor.png";
 import oscgWorkshop from "../assets/certificates/oscgWorkshop.png";
