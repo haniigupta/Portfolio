@@ -836,3 +836,39 @@ body::after {
     transform: translateX(6px);
   }
 }
+/* ---------- Mobile Project Tech Stack ---------- */
+
+@media (max-width: 768px) {
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-card p {
+    margin-bottom: 16px;
+  }
+
+  .tech-stack {
+    gap: 8px;
+    margin: 14px 0 18px;
+  }
+
+  .tech-stack span {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+    line-height: 1.2;
+  }
+
+  .project-card .mt-8 {
+    margin-top: 18px !important;
+  }
+
+  .project-card .flex {
+    gap: 10px;
+  }
+
+  .project-card a {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
