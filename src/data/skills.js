@@ -30,6 +30,7 @@ export const skillCategories = [
       "Node.js",
       "Express.js",
       "REST APIs",
+      "JWT",
     ],
   },
 
@@ -57,11 +58,14 @@ export const skillCategories = [
       "RAG",
       "LangChain",
       "Vector Embeddings",
-      "Semantic Search",
+      "Vector Search",
       "Prompt Engineering",
+      "Text Chunking",
       "Git",
       "GitHub",
       "Postman",
+      "Vercel",
+      "Render",
     ],
   },
 ];
