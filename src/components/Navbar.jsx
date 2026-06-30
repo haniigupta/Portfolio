@@ -15,10 +15,7 @@ function Navbar() {
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-
-        <Link to="/contributions">
-          Open Source
-        </Link>
+        <a href="#opensource">Open Source</a>
 
         <Link to="/certificates">
           Certificates
