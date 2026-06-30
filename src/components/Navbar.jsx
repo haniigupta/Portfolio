@@ -15,7 +15,13 @@ function Navbar() {
       transition={{ duration: 0.7 }}
       className="navbar"
     >
-      <h2 className="logo">Hani Gupta</h2>
+      <a
+  href="#home"
+  className="logo"
+  onClick={() => setMenuOpen(false)}
+>
+  Hani Gupta
+</a>
 
       {/* Desktop Navigation */}
       <div className="nav-links">
