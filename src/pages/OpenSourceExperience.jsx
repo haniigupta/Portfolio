@@ -30,7 +30,8 @@ function OpenSourceExperience() {
 
       </div>
 
-      <section className="mx-auto max-w-7xl px-8 pt-24 pb-20">
+      <section className="mx-auto max-w-7xl px-[10%]
+max-md:px-6 pt-24 pb-20">
 
         {/* Back */}
 
@@ -58,21 +59,9 @@ function OpenSourceExperience() {
 
           </span>
 
-          <h1 className="mt-5 max-w-4xl text-6xl font-black leading-[1.1]">
-
-            Building Software
-
-            <br />
-
-            Through
-
-            <span className="text-violet-400">
-
-              {" "}Real Contributions
-
-            </span>
-
-          </h1>
+          <h2 className="mb-[55px] text-[3rem] max-md:text-[2.2rem]">
+            Open Source Contributions
+          </h2>
 
           <p className="mt-10 max-w-3xl text-lg leading-9 text-gray-400">
 
@@ -127,7 +116,8 @@ function OpenSourceExperience() {
 
       {/* Organizations */}
 
-      <section className="mx-auto max-w-7xl px-8 py-28">
+      <section className="mx-auto max-w-7xl px-[10%]
+max-md:px-6 py-28">
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -232,12 +222,14 @@ function OpenSourceExperience() {
 
       </section>
 
-      <div className="mx-auto max-w-7xl px-8">
+      <div className="mx-auto max-w-7xl px-[10%]
+max-md:px-6">
         <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       </div>
       {/* Featured Pull Requests */}
 
-      <section className="mx-auto max-w-6xl px-8 pb-32">
+      <section className="mx-auto max-w-6xl px-[10%]
+max-md:px-6 pb-32">
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -344,8 +336,8 @@ function OpenSourceExperience() {
               viewport={{ once: true }}
               className="border-b border-white/10 pb-16"
             >
-              <div className="flex items-start gap-8">
-                <span className="text-6xl font-black text-violet-500/20 shrink-0">
+              <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
+                <span className="shrink-0 text-5xl font-black text-violet-500/20 md:text-6xl">
                   {item.no}
                 </span>
 
@@ -354,15 +346,15 @@ function OpenSourceExperience() {
                     {item.repo}
                   </p>
 
-                  <h3 className="mt-3 text-4xl font-bold">
+                  <h3 className="mt-3 text-2xl font-bold leading-tight md:text-4xl">
                     {item.title}
                   </h3>
 
-                  <div className="mt-10 space-y-8">
+                  <div className="mt-8 space-y-6 md:mt-10 md:space-y-8">
 
                     <div>
                       <h4 className="text-lg font-semibold">Problem</h4>
-                      <p className="mt-3 leading-8 text-gray-400">{item.problem}</p>
+                     <p className="mt-3 text-[15px] leading-7 text-[#c7c7c7] md:text-lg md:leading-8">{item.problem}</p>
                     </div>
 
                     <div>
@@ -396,7 +388,7 @@ function OpenSourceExperience() {
                         href={item.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-4 inline-flex items-center gap-3 text-violet-400 hover:gap-4 transition-all"
+                        className="mt-4 inline-flex items-center gap-2 text-[#6d5dfc] font-medium transition-colors hover:text-[#8b7dff]"
                       >
                         <FaCodeBranch />
                         View Pull Request →
@@ -415,7 +407,8 @@ function OpenSourceExperience() {
 
       {/* Engineering Impact */}
 
-      <section className="mx-auto max-w-6xl px-8 py-28">
+      <section className="mx-auto max-w-6xl px-[10%]
+max-md:px-6 py-28">
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
