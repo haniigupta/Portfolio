@@ -179,6 +179,32 @@ export const certificates = [
     "IBM SkillsBuild",
   ],
 },
+{
+  id: 9,
+  title: "Full Stack Developer Certification",
+  issuer: "GeeksforGeeks",
+  issued: "July 2026",
+  image: fullStackBootcamp,
+
+  credentialUrl:
+    "https://media.geeksforgeeks.org/courses/certificates/50865afb88c3fbb0d0bba3e0dbd36d61.pdf",
+
+  description:
+    "Completed an industry-oriented Full Stack Development Bootcamp covering frontend development, backend development, REST APIs, databases, authentication and deployment of modern web applications.",
+
+  skills: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "REST APIs",
+    "Authentication",
+    "Full Stack Development",
+  ],
+},
 
 
 ];
