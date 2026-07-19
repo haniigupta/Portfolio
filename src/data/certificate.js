@@ -31,9 +31,35 @@ export const certificates = [
       "AI Applications",
     ],
   },
-
   {
     id: 2,
+    title: "Full Stack Developer Certification",
+    issuer: "GeeksforGeeks",
+    issued: "July 2026",
+    image: fullStackBootcamp,
+
+    credentialUrl:
+      "https://media.geeksforgeeks.org/courses/certificates/50865afb88c3fbb0d0bba3e0dbd36d61.pdf",
+
+    description:
+      "Completed an industry-oriented Full Stack Development Bootcamp covering frontend development, backend development, REST APIs, databases, authentication and deployment of modern web applications.",
+
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+      "Authentication",
+      "Full Stack Development",
+    ],
+  },
+
+  {
+    id: 3,
     title: "MongoDB Developer's Toolkit",
     issuer: "GeeksforGeeks",
     issued: "June 2026",
@@ -54,9 +80,31 @@ export const certificates = [
       "Sharding",
     ],
   },
+  {
+    id: 4,
+    title: "Getting Started with Generative AI",
+    issuer: "IBM SkillsBuild",
+    issued: "July 2026",
+    image: ibmGenAI,
+
+    credentialUrl: "https://www.credly.com/go/kDHIfa8e",
+
+    description:
+      "Completed IBM SkillsBuild's introductory Generative AI program covering foundational concepts of Large Language Models, prompt engineering, AI applications and responsible AI.",
+
+    skills: [
+      "Generative AI",
+      "LLMs",
+      "Prompt Engineering",
+      "Responsible AI",
+      "AI Fundamentals",
+      "IBM SkillsBuild",
+    ],
+  },
+
 
   {
-    id: 3,
+    id: 5,
     title: "Open Source Connect Global 2026 – Contributor",
     issuer: "Open Source Connect",
     issued: "February 2026",
@@ -78,7 +126,7 @@ export const certificates = [
   },
 
   {
-    id: 4,
+    id: 6,
     title: "Open Source Connect Global 2026 – Technical Workshop",
     issuer: "Open Source Connect",
     issued: "February 2026",
@@ -96,9 +144,28 @@ export const certificates = [
       "Collaboration",
     ],
   },
+  {
+    id: 7,
+    title: "Generative AI for Business",
+    issuer: "Grant Thornton Bharat LLP",
+    issued: "April 2026",
+    image: genAiBusiness,
+
+    credentialUrl: "",
+
+    description:
+      "Learned practical business applications of Generative AI including workflow automation, productivity enhancement and decision support.",
+
+    skills: [
+      "Generative AI",
+      "Automation",
+      "Business AI",
+      "Productivity",
+    ],
+  },
 
   {
-    id: 5,
+    id: 8,
     title: "ReactJS",
     issuer: "GeeksforGeeks",
     issued: "September 2025",
@@ -119,7 +186,7 @@ export const certificates = [
   },
 
   {
-    id: 6,
+    id: 9,
     title: "Git",
     issuer: "GeeksforGeeks",
     issued: "November 2025",
@@ -139,72 +206,8 @@ export const certificates = [
     ],
   },
 
-  {
-    id: 7,
-    title: "Generative AI for Business",
-    issuer: "Grant Thornton Bharat LLP",
-    issued: "April 2026",
-    image: genAiBusiness,
 
-    credentialUrl: "",
 
-    description:
-      "Learned practical business applications of Generative AI including workflow automation, productivity enhancement and decision support.",
-
-    skills: [
-      "Generative AI",
-      "Automation",
-      "Business AI",
-      "Productivity",
-    ],
-  },
-  {
-  id: 8,
-  title: "Getting Started with Generative AI",
-  issuer: "IBM SkillsBuild",
-  issued: "July 2026",
-  image: ibmGenAI,
-
-  credentialUrl: "https://www.credly.com/go/kDHIfa8e",
-
-  description:
-    "Completed IBM SkillsBuild's introductory Generative AI program covering foundational concepts of Large Language Models, prompt engineering, AI applications and responsible AI.",
-
-  skills: [
-    "Generative AI",
-    "LLMs",
-    "Prompt Engineering",
-    "Responsible AI",
-    "AI Fundamentals",
-    "IBM SkillsBuild",
-  ],
-},
-{
-  id: 9,
-  title: "Full Stack Developer Certification",
-  issuer: "GeeksforGeeks",
-  issued: "July 2026",
-  image: fullStackBootcamp,
-
-  credentialUrl:
-    "https://media.geeksforgeeks.org/courses/certificates/50865afb88c3fbb0d0bba3e0dbd36d61.pdf",
-
-  description:
-    "Completed an industry-oriented Full Stack Development Bootcamp covering frontend development, backend development, REST APIs, databases, authentication and deployment of modern web applications.",
-
-  skills: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "REST APIs",
-    "Authentication",
-    "Full Stack Development",
-  ],
-},
 
 
 ];
