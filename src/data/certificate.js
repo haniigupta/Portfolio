@@ -158,6 +158,27 @@ export const certificates = [
       "Productivity",
     ],
   },
+  {
+  id: 8,
+  title: "Getting Started with Generative AI",
+  issuer: "IBM SkillsBuild",
+  issued: "July 2026",
+  image: ibmGenAI,
+
+  credentialUrl: "https://www.credly.com/go/kDHIfa8e",
+
+  description:
+    "Completed IBM SkillsBuild's introductory Generative AI program covering foundational concepts of Large Language Models, prompt engineering, AI applications and responsible AI.",
+
+  skills: [
+    "Generative AI",
+    "LLMs",
+    "Prompt Engineering",
+    "Responsible AI",
+    "AI Fundamentals",
+    "IBM SkillsBuild",
+  ],
+},
 
 
 ];
