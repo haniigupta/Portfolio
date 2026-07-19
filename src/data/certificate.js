@@ -5,6 +5,8 @@ import oscgContributor from "../assets/certificates/oscgContributor.png";
 import oscgWorkshop from "../assets/certificates/oscgWorkshop.png";
 import git from "../assets/certificates/git.png";
 import react from "../assets/certificates/react.png";
+import ibmGenAI from "../assets/certificates/ibmGenAI.png"
+import fullStackBootcamp from "../assets/certificates/fullStackBootcamp.png";
 
 export const certificates = [
   {
